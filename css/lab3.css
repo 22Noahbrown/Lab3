@@ -1,6 +1,6 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
+/*Dmitrii Demin 200464709*/
 /* Box-sizing reset (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) */
 html {
 	box-sizing: border-box;
@@ -15,4 +15,45 @@ html {
 #container {
 	width: 80%;
 	margin: 0 auto;
+}
+
+ 
+ .tabs ul {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-radius: 1rem 1rem 0rem 0rem;
+
+}
+.tabs ul li {
+	margin-right: 10px;
+}
+.tabs ul li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #333;
+	background-color: #bbbbbb; 
+	border-radius: 1rem 1rem 0rem 0rem;
+	font-weight: bold;
+}
+
+/* the tab selected */
+.tabs ul li a.active {
+    border-top: 3px solid #333; 
+    border-left: 3px solid #333; 
+    border-right: 3px solid #333; 
+}
+.tabs div[role="tabpanel"] {
+	display: none;
+
+
+}
+/* the tab that contain the text when active */
+.tabs div[role="tabpanel"].active {
+	display: block;
+	border: 3px solid #333; 
+    padding: 20px;
+	
 }
